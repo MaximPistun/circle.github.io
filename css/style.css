@@ -37,7 +37,7 @@ body{
     height: 400px;
 }
 .text{
-    color: cornflowerblue;
+    color: rgb(121, 100, 237);
     font-size: 25px;
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
@@ -62,19 +62,19 @@ body{
     width: 180px;
     height: 200px;
     animation: rt 10s infinite linear;
-    box-shadow: 0 0 1px 0 darkviolet, inset 0 0 10px 0 blueviolet;
+    box-shadow: 0 0 1px 0 darkviolet, inset 0 0 10px 0 darkviolet;
 }
 .circle:nth-child(3){
     width: 210px;
     height: 190px;
     animation: rt 5s infinite linear;
-    box-shadow: 0 0 1px 0 darkmagenta, inset 0 0 10px 0 blueviolet;
+    box-shadow: 0 0 1px 0 darkmagenta, inset 0 0 10px 0 darkmagenta;
 }
 .circle:nth-child(4){
     width: 190px;
     height: 210px;
     animation: rt 15s infinite linear;
-    box-shadow: 0 0 1px 0 magenta, inset 0 0 10px 0 blueviolet;
+    box-shadow: 0 0 1px 0 magenta, inset 0 0 10px 0 magenta;
 }
 
 /* у анимации переменная rt */
