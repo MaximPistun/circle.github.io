@@ -1,0 +1,85 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: rgb(11, 11, 20);
+    color: aliceblue;
+}
+.wrapper{
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    height: 400px;
+}
+.text{
+    color: cornflowerblue;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.circle {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: rgba(41, 19, 62, 0.02);
+}
+.circle:nth-child(1){
+    width: 200px;
+    height: 180px;
+    animation: rt 6s infinite linear;
+    box-shadow: 0 0 1px 0 blueviolet, inset 0 0 10px 0 blueviolet;
+}
+.circle:nth-child(2){
+    width: 180px;
+    height: 200px;
+    animation: rt 10s infinite linear;
+    box-shadow: 0 0 1px 0 darkviolet, inset 0 0 10px 0 blueviolet;
+}
+.circle:nth-child(3){
+    width: 210px;
+    height: 190px;
+    animation: rt 5s infinite linear;
+    box-shadow: 0 0 1px 0 darkmagenta, inset 0 0 10px 0 blueviolet;
+}
+.circle:nth-child(4){
+    width: 190px;
+    height: 210px;
+    animation: rt 15s infinite linear;
+    box-shadow: 0 0 1px 0 magenta, inset 0 0 10px 0 blueviolet;
+}
+
+/* у анимации переменная rt */
+@keyframes rt {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
